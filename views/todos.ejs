@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+  <h1>Todo List</h1>
+  
+  <ul>
+    <% todos.forEach(item => { %>
+      <li><%= item.todo %> - <%= item.completed ? 'completed' : 'not completed' %></li>
+    <% }) %>
+  </ul>
+
+
+<%- include('partials/footer') %>
